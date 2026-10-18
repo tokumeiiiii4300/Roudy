@@ -4,3 +4,25 @@ body {
     "ＭＳ 明朝",
     serif;
 }
+/* スマホ対応 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+select,
+button {
+  max-width: 100%;
+}
