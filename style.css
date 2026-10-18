@@ -1,26 +1,30 @@
+
+/* フォント */
 body {
   font-family:
     "MS Mincho",
     "ＭＳ 明朝",
     serif;
-}
-/* スマホ対応 */
-* {
-  box-sizing: border-box;
-}
 
-body {
+  /* スマホ対応 */
   margin: 0;
   padding: 16px;
   max-width: 100%;
   overflow-wrap: break-word;
 }
 
+/* 幅の計算 */
+* {
+  box-sizing: border-box;
+}
+
+/* 画像のはみ出し防止 */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* フォームのはみ出し防止 */
 input,
 select,
 button {
