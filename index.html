@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ろうでぃ</title>
+
+  <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/1355320039456243732/1455170228014158058/ht_aikon.png?ex=6953c062&is=69526ee2&hm=4709811ca11deb4abec123d565a3d8fb8266999b162bb1b077b32988fd5d5724&"
+        type="image/png"
+        sizes="16x16">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    CSSもなにもない地味なサイトです。
+  </header>
+
+  <main>
+    <h1>SNSリンク</h1>
+
+    <ul>
+      <li>
+        youtube
+      </li>
+    </ul>
+
+    <details>
+      <summary>クリックすると展開します。</summary>
+      <p>
+        <img src="kawaiidesho.png" alt="かわいいでしょ？" width="193" height="130">
+      </p>
+    </details>
+
+    <form id="voteForm">
+      <p>
+        かわいいですか？<br>
+        <select name="answer">
+          <option value="1">はい</option>
+          <option value="2">いいえ</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="送信">
+      </p>
+    </form>
+
+    <p id="result" hidden>
+      送信が完了しました！
+    </p>
+  </main>
+
+  <script>
+    document.getElementById("voteForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      document.getElementById("voteForm").hidden = true;
+      document.getElementById("result").hidden = false;
+    });
+  </script>
+</body>
+</html>
